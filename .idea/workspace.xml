@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e1fb8e4a-048d-4a8a-852e-268ac39ac9e9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/consus.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/storage.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/storage_test.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="K:\Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1iFgmfBLmlOHdfLtGPVtmQYsFaj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\rogel\go\src\github.com\rogelioConsejo\Consus" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\rogel\go\src\github.com\rogelioConsejo\Consus\warehouse" />
+      <recent name="C:\Users\rogel\go\src\github.com\rogelioConsejo\Consus\storage\" />
+      <recent name="C:\Users\rogel\go\src\github.com\rogelioConsejo\Consus\storage" />
+      <recent name="C:\Users\rogel\go\src\github.com\rogelioConsejo\Consus\" />
+      <recent name="C:\Users\rogel\go\src\github.com\rogelioConsejo\Consus\storage\storageImplementations" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Test.TestStoreAndUseItem in github.com/rogelioConsejo/Consus/storage">
+    <configuration name="TestName in github.com/rogelioConsejo/Consus (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Consus" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/rogelioConsejo/Consus" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestName\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestName in github.com/rogelioConsejo/Consus" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Consus" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/rogelioConsejo/Consus" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestName\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestStoreAndUseItem in github.com/rogelioConsejo/Consus/storage" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Consus" />
+      <working_directory value="$PROJECT_DIR$/storage" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/rogelioConsejo/Consus/storage" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestStoreAndUseItem\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestStoreGetOneAndUse in github.com/rogelioConsejo/Consus" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Consus" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/rogelioConsejo/Consus" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestStoreGetOneAndUse\E$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Test.TestStoreAndUseItem in github.com/rogelioConsejo/Consus/storage" />
+        <item itemvalue="Go Test.TestStoreGetOneAndUse in github.com/rogelioConsejo/Consus" />
+        <item itemvalue="Go Test.TestName in github.com/rogelioConsejo/Consus (1)" />
+        <item itemvalue="Go Test.TestName in github.com/rogelioConsejo/Consus" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="873" y="305" width="448" height="600" key="#Build_Tags_&amp;_Vendoring" timestamp="1601528154723">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state x="873" y="305" width="448" height="600" key="#Build_Tags_&amp;_Vendoring/0.0.2194.1194@0.0.2194.1194" timestamp="1601528154723" />
+    <state x="878" y="338" key="FileChooserDialogImpl" timestamp="1601509859647">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state x="878" y="338" key="FileChooserDialogImpl/0.0.2194.1194@0.0.2194.1194" timestamp="1601509859647" />
+    <state width="2151" height="333" key="GridCell.Tab.0.bottom" timestamp="1601531644266">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state width="2151" height="333" key="GridCell.Tab.0.bottom/0.0.2194.1194@0.0.2194.1194" timestamp="1601531644266" />
+    <state width="2151" height="333" key="GridCell.Tab.0.center" timestamp="1601531644266">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state width="2151" height="333" key="GridCell.Tab.0.center/0.0.2194.1194@0.0.2194.1194" timestamp="1601531644266" />
+    <state width="2151" height="333" key="GridCell.Tab.0.left" timestamp="1601531644266">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state width="2151" height="333" key="GridCell.Tab.0.left/0.0.2194.1194@0.0.2194.1194" timestamp="1601531644266" />
+    <state width="2151" height="333" key="GridCell.Tab.0.right" timestamp="1601531644266">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state width="2151" height="333" key="GridCell.Tab.0.right/0.0.2194.1194@0.0.2194.1194" timestamp="1601531644266" />
+    <state x="809" y="330" width="576" height="534" key="find.popup" timestamp="1601530456487">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state x="809" y="330" width="576" height="534" key="find.popup/0.0.2194.1194@0.0.2194.1194" timestamp="1601530456487" />
+    <state x="760" y="264" width="672" height="678" key="search.everywhere.popup" timestamp="1601528181912">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state x="760" y="264" width="672" height="678" key="search.everywhere.popup/0.0.2194.1194@0.0.2194.1194" timestamp="1601528181912" />
+  </component>
+</project>
