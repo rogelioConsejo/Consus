@@ -20,9 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1fb8e4a-048d-4a8a-852e-268ac39ac9e9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/consus.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/storage.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/storage_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/label.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/storable.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/storage.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniqueItemStorage/item.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniqueItemStorage/tag.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniqueItemStorage/warehouse.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consus.go" beforeDir="false" afterPath="$PROJECT_DIR$/consus.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/storage.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/storage_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/uniqueItemStorage/item_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,21 +59,24 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/domain" />
   </component>
   <component name="RecentsManager">
+    <key name="GoExtractInterfaceDialog.RECENT_KEY">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\rogel\go\src\github.com\rogelioConsejo\Consus" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\rogel\go\src\github.com\rogelioConsejo\Consus\domain" />
+      <recent name="C:\Users\rogel\go\src\github.com\rogelioConsejo\Consus\" />
+      <recent name="C:\Users\rogel\go\src\github.com\rogelioConsejo\Consus\interfaces" />
       <recent name="C:\Users\rogel\go\src\github.com\rogelioConsejo\Consus\warehouse" />
       <recent name="C:\Users\rogel\go\src\github.com\rogelioConsejo\Consus\storage\" />
-      <recent name="C:\Users\rogel\go\src\github.com\rogelioConsejo\Consus\storage" />
-      <recent name="C:\Users\rogel\go\src\github.com\rogelioConsejo\Consus\" />
-      <recent name="C:\Users\rogel\go\src\github.com\rogelioConsejo\Consus\storage\storageImplementations" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestStoreAndUseItem in github.com/rogelioConsejo/Consus/storage">
+  <component name="RunManager" selected="Go Test.TestStoreAndUseItem in github.com/rogelioConsejo/Consus/item">
     <configuration name="TestName in github.com/rogelioConsejo/Consus (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Consus" />
       <working_directory value="$PROJECT_DIR$" />
@@ -86,6 +97,17 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <pattern value="^\QTestName\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestStoreAndUseItem in github.com/rogelioConsejo/Consus/item" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Consus" />
+      <working_directory value="$PROJECT_DIR$/item" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/rogelioConsejo/Consus/item" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestStoreAndUseItem\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestStoreAndUseItem in github.com/rogelioConsejo/Consus/storage" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -112,6 +134,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestStoreAndUseItem in github.com/rogelioConsejo/Consus/item" />
         <item itemvalue="Go Test.TestStoreAndUseItem in github.com/rogelioConsejo/Consus/storage" />
         <item itemvalue="Go Test.TestStoreGetOneAndUse in github.com/rogelioConsejo/Consus" />
         <item itemvalue="Go Test.TestName in github.com/rogelioConsejo/Consus (1)" />
@@ -140,26 +163,38 @@
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
     <state x="873" y="305" width="448" height="600" key="#Build_Tags_&amp;_Vendoring/0.0.2194.1194@0.0.2194.1194" timestamp="1601528154723" />
-    <state x="878" y="338" key="FileChooserDialogImpl" timestamp="1601509859647">
+    <state x="825" y="399" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601672962701">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state x="878" y="338" key="FileChooserDialogImpl/0.0.2194.1194@0.0.2194.1194" timestamp="1601509859647" />
-    <state width="2151" height="333" key="GridCell.Tab.0.bottom" timestamp="1601531644266">
+    <state x="825" y="399" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2194.1194@0.0.2194.1194" timestamp="1601672962701" />
+    <state x="879" y="173" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601625070119">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state width="2151" height="333" key="GridCell.Tab.0.bottom/0.0.2194.1194@0.0.2194.1194" timestamp="1601531644266" />
-    <state width="2151" height="333" key="GridCell.Tab.0.center" timestamp="1601531644266">
+    <state x="879" y="173" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2194.1194@0.0.2194.1194" timestamp="1601625070119" />
+    <state x="878" y="338" key="FileChooserDialogImpl" timestamp="1601763739331">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state width="2151" height="333" key="GridCell.Tab.0.center/0.0.2194.1194@0.0.2194.1194" timestamp="1601531644266" />
-    <state width="2151" height="333" key="GridCell.Tab.0.left" timestamp="1601531644266">
+    <state x="878" y="338" key="FileChooserDialogImpl/0.0.2194.1194@0.0.2194.1194" timestamp="1601763739330" />
+    <state width="2151" height="333" key="GridCell.Tab.0.bottom" timestamp="1601766540826">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state width="2151" height="333" key="GridCell.Tab.0.left/0.0.2194.1194@0.0.2194.1194" timestamp="1601531644266" />
-    <state width="2151" height="333" key="GridCell.Tab.0.right" timestamp="1601531644266">
+    <state width="2151" height="333" key="GridCell.Tab.0.bottom/0.0.2194.1194@0.0.2194.1194" timestamp="1601766540826" />
+    <state width="2151" height="333" key="GridCell.Tab.0.center" timestamp="1601766540826">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state width="2151" height="333" key="GridCell.Tab.0.right/0.0.2194.1194@0.0.2194.1194" timestamp="1601531644266" />
+    <state width="2151" height="333" key="GridCell.Tab.0.center/0.0.2194.1194@0.0.2194.1194" timestamp="1601766540826" />
+    <state width="2151" height="333" key="GridCell.Tab.0.left" timestamp="1601766540826">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state width="2151" height="333" key="GridCell.Tab.0.left/0.0.2194.1194@0.0.2194.1194" timestamp="1601766540826" />
+    <state width="2151" height="333" key="GridCell.Tab.0.right" timestamp="1601766540826">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state width="2151" height="333" key="GridCell.Tab.0.right/0.0.2194.1194@0.0.2194.1194" timestamp="1601766540826" />
+    <state x="877" y="400" key="com.goide.refactor.extractInterface.GoExtractInterfaceDialog" timestamp="1601626698431">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state x="877" y="400" key="com.goide.refactor.extractInterface.GoExtractInterfaceDialog/0.0.2194.1194@0.0.2194.1194" timestamp="1601626698431" />
     <state x="809" y="330" width="576" height="534" key="find.popup" timestamp="1601530456487">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
