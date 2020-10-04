@@ -1,7 +1,6 @@
 package storage
 
 import (
-	"github.com/rogelioConsejo/Consus/storage/persistence"
 	"github.com/rogelioConsejo/Consus/storage/storable"
 )
 
@@ -15,9 +14,9 @@ type StorableDto interface {
 	Delete(id string) error
 }
 
-func Storage() *storage {
+func Storage(dto StorableDto) *storage {
 	s := new(storage)
-	s.dto = persistence.Mock()
+	s.dto = dto
 
 	return s
 }

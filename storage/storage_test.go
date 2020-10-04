@@ -3,6 +3,7 @@ package storage
 import (
 	"errors"
 	"fmt"
+	"github.com/rogelioConsejo/Consus/storage/persistence"
 	"github.com/rogelioConsejo/Consus/storage/storable"
 	"testing"
 )
@@ -19,12 +20,12 @@ func TestStoreAndCheckOutItem(t *testing.T) {
 	item := storable.Storable(label)
 
 	//Store
-	storage := Storage()
+	storage := Storage(persistence.Mock())
 	err, id := storage.Store(item)
 
 	var retrievedItem storable.Type
 	if err == nil {
-		fmt.Printf("{%s} saved:\n", id)
+		fmt.Printf("saved: {%s} \n", id)
 		//CheckOut
 		err, retrievedItem = storage.CheckOut(id)
 	} else {
@@ -33,7 +34,7 @@ func TestStoreAndCheckOutItem(t *testing.T) {
 
 
 	if err == nil && retrievedItem != nil{
-		fmt.Printf("{%s} retrieved:\n", id)
+		fmt.Printf("{%s} retrieved\n", id)
 		//Read label of retrieved
 		if retrievedItem.Label()[testKey] == testValue {
 			println(retrievedItem.Label()[testKey])
