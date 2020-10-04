@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"github.com/rogelioConsejo/Consus/storage/storable"
 	"math/rand"
+	"time"
 )
 
 type mock struct {
@@ -20,9 +21,9 @@ func Mock() *mock {
 
 func (m *mock) Create(s storable.Type) (err error, id string) {
 	var key string
-	key = createToken(10)
+	key = CreateToken(12)
 	for m.stored[key] != nil {
-		key = createToken(10)
+		key = CreateToken(10)
 	}
 
 	m.stored[key] = s
@@ -44,9 +45,10 @@ func (m *mock) Delete(id string) error{
 	return nil
 }
 
-func createToken(length int) string {
+func CreateToken(length int) string {
+	r := rand.New(rand.NewSource(time.Now().UnixNano()))
 	b := make([]byte, length)
-	if _, err := rand.Read(b); err != nil {
+	if _, err := r.Read(b); err != nil {
 		return ""
 	}
 	return hex.EncodeToString(b)

@@ -24,6 +24,7 @@ func TestStoreAndCheckOutItem(t *testing.T) {
 
 	var retrievedItem storable.Type
 	if err == nil {
+		fmt.Printf("{%s} saved:\n", id)
 		//CheckOut
 		err, retrievedItem = storage.CheckOut(id)
 	} else {
@@ -32,6 +33,7 @@ func TestStoreAndCheckOutItem(t *testing.T) {
 
 
 	if err == nil && retrievedItem != nil{
+		fmt.Printf("{%s} retrieved:\n", id)
 		//Read label of retrieved
 		if retrievedItem.Label()[testKey] == testValue {
 			println(retrievedItem.Label()[testKey])
@@ -48,6 +50,8 @@ func TestStoreAndCheckOutItem(t *testing.T) {
 		err, notRetrievedItem := storage.CheckOut(id)
 		if err == nil || notRetrievedItem != nil{
 			err = errors.New("error: must not be able to CheckOut() a storable that has already been CheckOut()'d")
+		} else {
+			fmt.Printf("{%s} already retrieved: %s\n", id, err.Error())
 		}
 	}
 
