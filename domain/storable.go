@@ -1,5 +1,13 @@
 package domain
 
 type Storable interface {
-	GetLabel() Label
+	Id() string
+	Label() Label
+}
+
+type CountableStorable interface {
+	Storable
+	Count() uint
+	Put(uint)
+	Take(uint) error
 }

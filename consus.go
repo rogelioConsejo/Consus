@@ -14,11 +14,11 @@ func Store(storable domain.Storable) (error, uint) {
 }
 
 //TODO
-func GetName(storableId uint) (error, string) {
+func GetName(storableId string) (error, string) {
 	return errors.New("not implemented"), ""
 }
 
 //TODO
-func Use(storableId uint) error {
+func Use(storableId string) error {
 	return errors.New("not implemented")
 }

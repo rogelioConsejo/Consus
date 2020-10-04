@@ -20,17 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1fb8e4a-048d-4a8a-852e-268ac39ac9e9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/domain/label.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/storable.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/storage.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uniqueItemStorage/item.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uniqueItemStorage/tag.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uniqueItemStorage/warehouse.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/uniqueItemStorage/item.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/uniqueItemStorage/persistence/ItemSaver.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/uniqueItemStorage/tag.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/uniqueItemStorage/warehouse_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/consus.go" beforeDir="false" afterPath="$PROJECT_DIR$/consus.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/storage.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/storage_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/uniqueItemStorage/item_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/label.go" beforeDir="false" afterPath="$PROJECT_DIR$/domain/label.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/storable.go" beforeDir="false" afterPath="$PROJECT_DIR$/domain/storable.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/storage.go" beforeDir="false" afterPath="$PROJECT_DIR$/domain/storage.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uniqueItemStorage/item.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uniqueItemStorage/item_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uniqueItemStorage/tag.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uniqueItemStorage/warehouse.go" beforeDir="false" afterPath="$PROJECT_DIR$/domain/uniqueItemStorage/warehouse.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,10 +73,10 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\rogel\go\src\github.com\rogelioConsejo\Consus\domain" />
-      <recent name="C:\Users\rogel\go\src\github.com\rogelioConsejo\Consus\" />
-      <recent name="C:\Users\rogel\go\src\github.com\rogelioConsejo\Consus\interfaces" />
-      <recent name="C:\Users\rogel\go\src\github.com\rogelioConsejo\Consus\warehouse" />
-      <recent name="C:\Users\rogel\go\src\github.com\rogelioConsejo\Consus\storage\" />
+      <recent name="C:\Users\rogel\go\src\github.com\rogelioConsejo\Consus\use cases" />
+      <recent name="C:\Users\rogel\go\src\github.com\rogelioConsejo\Consus" />
+      <recent name="C:\Users\rogel\go\src\github.com\rogelioConsejo\Consus\uniqueItemStorage\persistence" />
+      <recent name="C:\Users\rogel\go\src\github.com\rogelioConsejo\Consus\uniqueItemStorage" />
     </key>
   </component>
   <component name="RunManager" selected="Go Test.TestStoreAndUseItem in github.com/rogelioConsejo/Consus/item">
@@ -199,6 +202,10 @@
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
     <state x="809" y="330" width="576" height="534" key="find.popup/0.0.2194.1194@0.0.2194.1194" timestamp="1601530456487" />
+    <state x="938" y="355" key="refactoring.ChangeSignatureDialog" timestamp="1601774928956">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state x="938" y="355" key="refactoring.ChangeSignatureDialog/0.0.2194.1194@0.0.2194.1194" timestamp="1601774928956" />
     <state x="760" y="264" width="672" height="678" key="search.everywhere.popup" timestamp="1601528181912">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
