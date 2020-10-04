@@ -3,11 +3,11 @@ package storage
 import (
 	"errors"
 	"fmt"
-	"github.com/rogelioConsejo/Consus/domain/storable"
+	"github.com/rogelioConsejo/Consus/storage/storable"
 	"testing"
 )
 
-func TestStoreAndUseItem(t *testing.T) {
+func TestStoreAndCheckOutItem(t *testing.T) {
 	var label storable.Label
 	label = make(storable.Label)
 
@@ -24,8 +24,8 @@ func TestStoreAndUseItem(t *testing.T) {
 
 	var retrievedItem storable.Type
 	if err == nil {
-		//Use
-		err, retrievedItem = storage.Use(id)
+		//CheckOut
+		err, retrievedItem = storage.CheckOut(id)
 	} else {
 		err = errors.New(fmt.Sprintf("error trying Store(): \n%s", err.Error()))
 	}
@@ -40,14 +40,14 @@ func TestStoreAndUseItem(t *testing.T) {
 			err = errors.New("value retrieved incorrectly")
 		}
 	} else if err != nil {
-		err = errors.New(fmt.Sprintf("error trying Use(): \n%s", err.Error()))
+		err = errors.New(fmt.Sprintf("error trying CheckOut(): \n%s", err.Error()))
 	}
 
 	if err == nil {
-		//Use previously Used (should fail and return error)
-		err, notRetrievedItem := storage.Use(id)
+		//CheckOut previously Used (should fail and return error)
+		err, notRetrievedItem := storage.CheckOut(id)
 		if err == nil || notRetrievedItem != nil{
-			err = errors.New("error: must not be able to Use() a storable that has already been Use()'d")
+			err = errors.New("error: must not be able to CheckOut() a storable that has already been CheckOut()'d")
 		}
 	}
 
