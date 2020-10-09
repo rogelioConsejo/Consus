@@ -1,6 +1,8 @@
 package sku
 
 import (
+	"errors"
+	"fmt"
 	"github.com/rogelioConsejo/Consus/sku/unit"
 	"github.com/rogelioConsejo/Consus/storage/storable"
 	"math/big"
@@ -34,15 +36,25 @@ func Sku(u unit.Unit) *sku {
 }
 
 func (s *sku) Add(float *big.Float)  {
+	s.amount.Add(s.amount, float)
 }
 
 func (s *sku) Take(float *big.Float) error{
-	return nil
+	var err error
+
+	if s.amount.Cmp(float) < 0 {
+		err = errors.New(fmt.Sprintf("%s is not enough to take %s from sku", s.amount.String(), float.String()))
+	} else {
+		s.amount.Sub(s.amount, float)
+	}
+
+	return err
 }
 
 func (s *sku) Empty() {
+	_ = s.Take(s.Amount())
 }
 
 func (s *sku) Amount() *big.Float {
-	return big.NewFloat(0)
+	return s.amount
 }
